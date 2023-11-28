@@ -2,12 +2,21 @@
 import Layout from "../layouts/Layout.astro";
 ---
 <Layout>
-    <div slot="article" class="w-full flex justify-center dark:bg-green-300 dark:text-black mt-5 mb-5">
+  <div slot="article" class="w-full flex justify-center dark:text-black mt-5 mb-5">
+    <div class="container mx-auto p-4 border border-black">
       
    
   
     <div class="container mx-auto p-4">
       <section class="mb-8">
+        <h2 class="text-2xl font-bold mb-4">CV</h2>
+        <div class="relative">
+          <img
+            src="/public/laingedespues.jpg" 
+            alt="Fotografía"
+            class="w-32 h-32 transition-transform transform-gpu hover:scale-110"
+            />
+        </div>
         <h2 class="text-2xl font-bold mb-4">Datos Personales</h2>
         <ul>
           <li><span class="font-bold">Nombre:</span> Joselyn Yareny Contreras Navarro </li>

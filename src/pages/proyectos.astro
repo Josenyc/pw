@@ -1,17 +1,21 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import Proyecto from '../components/Proyecto.astro';
+import Layout from '../layouts/Layout.astro';
+const proyecto =await getCollection("proyectos");
 ---
-	<Layout>
-<div slot="article" class="w-full flex justify-center dark:bg-green-300 dark:text-black mt-5 mb-5">
-	<h1 class="text-4xl">Proyectos</h1>
 
-</div>
-
-
-
-  
-
-
-	</Layout>
-
-</html>
+<Layout>
+    <div slot="article" class=" w-full flex justify-center  dark:bg-violet-200 dark: text-gray-700 mt-5 mb-5">
+		<div class=" md:max-w-5xl grid gap-4 grid-cols-2 justify-center">
+				{ proyecto.map((project)=>(
+				<Proyecto
+					title={project.data.title}
+					link={project.data.link}
+					description={project.data.description}
+					/>
+				))
+				}
+		</div>
+	</div>
+</Layout>

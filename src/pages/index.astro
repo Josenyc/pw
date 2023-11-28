@@ -1,17 +1,36 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-	<Layout>
-<div slot="article" class="w-full flex justify-center dark:bg-green-300 dark:text-black mt-5 mb-5">
-	<h1 class="text-4xl">Inicio</h1>
 
-</div>
+<Layout>
+  <div slot="article" class="flex  dark:text-black mt-5 mb-5 justify-center items-center">
+    <!-- Mitad izquierda con la foto -->
+    <div class="w-1/2 flex justify-center items-center">
+      <!-- Puedes reemplazar 'ruta_de_la_foto' con la ruta real de tu foto -->
+      <img src="/public/laingedespues.jpg" alt="Mi Foto" class="max-w-full max-h-full" />
+    </div>
 
+    <!-- Mitad derecha con el cuadro de contenido sobre ti -->
+    <div class="w-1/2 p-5">
+      <h1 class="text-5xl font-bold mb-4">Yo soy...</h1>
+      <p class="text-lg font-serif">Yo soy Joselyn Yareny Contreras Navarro y tengo 21 años de edad.
+		Soy estudiante de la carrera de Ingenieria en Sistemas Computacionales del TecNM Campus Tlajomulco. 
+		Esta pagina web fue realizada como un proyecto por parte de la materia de Programación Web; realizamos varias versiones y este fue el resultado de la pagina ya montada en internet.
+		</p>
+	<p class="text-lg font-serif">Mostrando mas sobre mi, yo soy una persona a la que como a la mayoria de las personas la vida ha golpeado mucho,
+		una personas que ha intentado rendirse en los momentos en donde no habia ni un rayito de luz y aun cuando los habia no podia mirarlos.
+  Con el tiempo fui dandome cuenta de muchas cosas, muchos aprendizajes; descubri que nada era mi culpa y todo es parte del aprendizaje.
+Ahora no puedo decir que siempre veo todo con claridad o que ya no suceden momentos de oscuridad, porque todavia los hay y a veces llegan cuando menos lo espero,
+pero ya se como enfrentarlos, ya no tengo les tengo miedo, puedo luchar y vencerlos cuantas veces sean necesarios porque es parte de saber aprender a vivir con el monstruo
+de ser la  hermana mayor. 
+Y bueno, dando un cambio drastico, soy una persona a la que le gusta ayudar en lo que sea que este a mi alcance. 
+Leer y escribir es una de las cosas que mas me apasiona junto con la psicologia, pero que por circunstancias 
+de la vida aun no me toca poder echarlas a andar. 
 
-
-  
-
-
-	</Layout>
-
-</html>
+</p>
+<p class="text-lg font-serif">...</p>
+<p class="text-lg font-serif">Siempre hay que tener presente que todo trae consecuencias, que puedes ser un chingon sin ir a Harvard y principalmente...
+  Se tu mismo y haz lo que a ti te haga feliz, no hay nada mejor en la vida que la dicha de ser feliz.</p>	
+    </div>
+  </div>
+</Layout>
