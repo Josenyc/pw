@@ -8,21 +8,21 @@ import Layout from '../layouts/Layout.astro'
 		<div id="memorama">
 			<div class="fila">
 			  <img id="card0" src="/saw.png" onclick="voltearCarta(0);">
-			  <img id="card1" src="/public/saw.png" onclick="voltearCarta(1);">
-			  <img id="card2" src="/public/saw.png" onclick="voltearCarta(2);">
-			  <img id="card3" src="/public/saw.png" onclick="voltearCarta(3);">
+			  <img id="card1" src="/saw.png" onclick="voltearCarta(1);">
+			  <img id="card2" src="/saw.png" onclick="voltearCarta(2);">
+			  <img id="card3" src="/saw.png" onclick="voltearCarta(3);">
 			</div>
 			<div class="fila">
-			  <img id="card4" src="/public/saw.png" onclick="voltearCarta(4);">
-			  <img id="card5" src="/public/saw.png" onclick="voltearCarta(5);">
-			  <img id="card6" src="/public/saw.png" onclick="voltearCarta(6);">
-			  <img id="card7" src="/public/saw.png" onclick="voltearCarta(7);">
+			  <img id="card4" src="/saw.png" onclick="voltearCarta(4);">
+			  <img id="card5" src="/saw.png" onclick="voltearCarta(5);">
+			  <img id="card6" src="/saw.png" onclick="voltearCarta(6);">
+			  <img id="card7" src="/saw.png" onclick="voltearCarta(7);">
 			</div>
 			<div class="fila">
-			  <img id="card8" src="/public/saw.png" onclick="voltearCarta(8);">
-			  <img id="card9" src="/public/saw.png" onclick="voltearCarta(9);">
-			  <img id="card10" src="/public/saw.png" onclick="voltearCarta(10);">
-			  <img id="card11" src="/public/saw.png" onclick="voltearCarta(11);">
+			  <img id="card8" src="/saw.png" onclick="voltearCarta(8);">
+			  <img id="card9" src="/saw.png" onclick="voltearCarta(9);">
+			  <img id="card10" src="/saw.png" onclick="voltearCarta(10);">
+			  <img id="card11" src="/saw.png" onclick="voltearCarta(11);">
 			</div>
 		  </div>
 	</div>
@@ -30,18 +30,18 @@ import Layout from '../layouts/Layout.astro'
 
 <script lang="js">
 	  let imgArr = [
-    "/public/ana.png",
-    "/public/bye.png",
-    "/public/mrboogie.png",
-    "/public/scream.png",
-    "/public/it.png",
-    "/public/llorona.jpg",
-    "/public/ana.png",
-    "/public/bye.png",
-    "/public/mrboogie.png",
-    "/public/scream.png",
-    "/public/it.png",
-    "/public/llorona.jpg"
+    "/ana.png",
+    "/bye.png",
+    "/mrboogie.png",
+    "/scream.png",
+    "/it.png",
+    "/llorona.jpg",
+    "/ana.png",
+    "/bye.png",
+    "/mrboogie.png",
+    "/scream.png",
+    "/it.png",
+    "/llorona.jpg"
   ];
 
   let numsA = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
@@ -60,8 +60,8 @@ import Layout from '../layouts/Layout.astro'
     if (CartaVolteada.length == 2) {
       setTimeout(() => {
         if (CartaVolteada[0] != CartaVolteada[1]) {
-          document.getElementById(ContadorDeClicks[0]).src = "/public/saw.png";
-          document.getElementById(ContadorDeClicks[1]).src = "/public/saw.png";
+          document.getElementById(ContadorDeClicks[0]).src = "/saw.png";
+          document.getElementById(ContadorDeClicks[1]).src = "/saw.png";
         } else {
           Fin += 2;
           ganar();
@@ -78,7 +78,7 @@ import Layout from '../layouts/Layout.astro'
       contadorCV++;
       setTimeout(() => {
         for (let i = 0; i < 12; i++) {
-          document.getElementById("card" + i).src = "/public/saw.png";
+          document.getElementById("card" + i).src = "/saw.png";
         }
       }, 999);
       shuffle(numsA);
